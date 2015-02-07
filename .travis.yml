@@ -1,7 +1,6 @@
 language: ruby
 before_script:
   - cd tests/test_app
-  - bundle install
   - bundle exec rails g impressionist -f
   - bundle exec rake db:migrate
   - cd ..
